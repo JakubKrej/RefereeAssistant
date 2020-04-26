@@ -1,0 +1,587 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+header{
+    
+    position: relative;
+    background-color: #202020;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+
+header div.lfmenu {
+    
+    position: absolute;
+    z-index: 1;
+    width: 20.3%;
+    height: 100vh;
+    background-color: #262626;
+    opacity: 0.7;
+     
+}
+
+header div.lfmenu1 {
+    
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: 100vh;
+    background-color: #171717;
+     
+}
+
+header div.bgmainpanel {
+    
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    right: 0px;
+    z-index: 0;
+    background-color: gray;
+    background-image: url('/img/bgstadion2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    filter: blur(4px);
+    
+}
+
+header h1 {
+    
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    margin-left: 4%;
+    margin-right: 3%;
+    font-size: 33px;
+    color: #ffffff;
+    text-transform: uppercase;
+     
+}
+
+
+header input.line {
+    
+    position: absolute;
+    top: 13vh;
+    height: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+header div.menubuttons{
+    
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    font-size: 30px;    
+    top: 25vh;
+    height: 80vh;
+    text-transform: uppercase;
+    
+}
+
+header i {
+    
+    margin-right: 30px;
+}
+
+
+
+.d1 {
+    
+    position: absolute;
+    margin-left: 7px;
+    padding: 20px 133px 20px 75px;
+    background-color: transparent;
+    
+}
+
+.d1:hover {
+    
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.d2  {
+    
+    position: absolute;
+    margin-left: 7px;
+    top: 80px;
+    padding: 20px 75px 20px 75px;
+    background-color: transparent;
+}
+
+.d2:hover {
+    
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.d3  {
+    
+    position: absolute;
+    margin-left: 7px;
+    top: 160px;
+    padding: 20px 81px 20px 75px;
+    background-color: transparent;
+}
+
+.d3:hover {
+    
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.d4 {
+    
+    position: absolute;
+    margin-left: 7px;
+    bottom: 160px;
+    padding: 20px 124px 20px 75px;
+    background-color: transparent;
+}
+
+.d4:hover {
+    
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.d5  {
+    
+    position: absolute;
+    margin-left: 7px;
+    bottom: 80px;
+    padding: 20px 90px 20px 75px;
+    background-color: transparent;
+}
+
+.d5:hover {
+    
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.user{
+    
+    position: absolute;
+    width: 20%;
+    height: 50px;
+    right: 50px;
+    top: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 45px;
+    opacity: 0.8;
+    
+}
+
+
+.user p{
+    
+    position: absolute;
+    color: #ffffff;
+    width: 47px;
+    height: 47px;
+    right: 0px;
+    margin-top: 0px;
+    font-size: 48px;
+    vertical-align: text-top;
+    
+}
+
+.username {
+    
+    position: absolute;
+    height: 40px;
+    top: 5px;
+    border: none;
+    width: 80%;
+    left: 10px;
+    text-align: center;
+    border-radius: 45px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 9px;
+    padding-bottom: 12px;
+    
+}
+
+.mainpanel {
+    
+    position: absolute;
+    width: 75vw;
+    max-width: 75vw;
+    right: 50px;
+    top: 150px;
+    bottom: 50px;
+    background-color: black;
+    opacity: 0.8;
+    display: inline-block;
+    
+    
+}
+
+.mainpanel h2{
+    
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.mainpanel i {
+    
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 7%;
+    font-size: 30px;
+    
+}
+
+.tbdiv {
+    
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    right: 10%;
+    top: 20%;
+        
+}
+
+.tbdivad {
+    
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    right: 10%;
+    top: 20%;
+        
+}
+
+.tablee {
+    
+    color: white;
+    width: 100%;
+    
+}
+
+.tableead {
+    
+    color: white;
+    width: 91%;
+    
+}
+
+
+
+.col {
+    
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+
+.fi {
+    
+    width: 14%;
+    
+}
+
+.se {
+    
+    width: 14%;
+    
+}
+
+.th {
+    
+    width: 13%;
+    
+}
+
+.fo {
+    
+    width: 28%;
+    
+}
+
+.fiv {
+    
+    
+    width: 32%;
+}
+
+.adfi {
+    
+    width: 12%;
+}
+
+.adse {
+    
+    width: 16%;
+}
+
+.adth {
+    
+    width: 13%;
+}
+
+.adfo {
+    
+    width: 25%;
+}
+
+.adfiv {
+    
+    width: 34%;
+}
+
+.tbbody {
+    
+    position: relative;
+    height: 85%;
+    width: 100%;
+    overflow-y: auto;
+    background-color: #101010;
+    
+}
+
+.tbbody table{
+    
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+    
+}
+
+body td {
+    
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    
+   
+}
+
+.td1 {
+    
+    width: 14%;
+    
+}
+
+.td2 {
+    
+    width: 15%;
+
+}
+
+.td3 {
+
+    width: 13%;
+
+}
+
+.td4 {
+
+    width: 28%;
+
+}
+
+.td7 {
+
+    width: 33%;
+    
+}
+
+.adtd1 {
+    
+    width: 12%;
+}
+
+.adtd2 {
+    
+    width: 16%;
+}
+
+.adtd3 {
+    
+    width: 12%;
+}
+
+.adtd4 {
+    
+    width: 25%;
+}
+
+.adtd7 {
+    
+    width: 30%;
+}
+
+.adtd5 i{
+    position: relative;
+    width: 1px;
+    font-size: 20px;
+    
+}
+
+.adtd6 i {
+    
+    position: relative;
+    width: 1px;
+    font-size: 20px;
+    
+}
+
+i:hover {
+    
+    cursor: pointer;
+    
+}
+
+
+.tr1:nth-child(odd) {background-color: #252525}
+
+
+
+.search-box {
+    
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    height: 50px;
+    border-radius: 40px;
+    display: inline-flex;
+    background-color: #171717;
+
+   
+}
+
+
+.search-btn i{
+    
+
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    left: 5px;
+    
+}
+
+
+.search-btn {
+    
+    position: relative;
+    color: #e84118;
+    margin: 0;
+    right: 0px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #171717;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.search-txt {
+    
+    border: none;
+    background: none;
+    outline: one;
+    float: left;
+    width: 0px;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    
+}
+
+.search-sel {
+    
+    visibility: hidden;
+    width: 0px;
+    background-color: #171717; 
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 50%;
+    
+}
+
+.search-box:hover > .search-txt {
+    
+    width: 240px;
+    padding: 0 6px 0 20px;
+    
+}
+
+.search-box:hover > .search-btn i{
+    
+    color: black;
+    
+}
+
+.search-box:hover > .search-btn {
+    
+    background-color: white;
+    
+}
+
+.search-box:hover > .search-sel {
+    
+    width: 150px;
+    padding-left: 20px;
+    visibility: visible;
+    
+}
+
+.search-box:hover > .search-sub {
+    
+    float: right;
+    
+}
+
+
+
+
+
+

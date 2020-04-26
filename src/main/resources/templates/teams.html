@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/teamsstyle.css">
+    <script src="https://kit.fontawesome.com/7c7c64a889.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="lfmenu"></div>
+    <div class="lfmenu1">
+
+
+        <h1>asystent sędziego</h1>
+        <input class="line">
+
+        <div sec:authorize="hasRole('USER')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/index/mymatches'">
+                <p ><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/index/referees'">
+                <p ><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/index/teams'">
+                <p ><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d4" onClick="window.location.href='/index/profile'">
+                <p ><i class="fas fa-user-cog"></i>profil</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p ><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+        <div sec:authorize="hasRole('ADMIN')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/admin/allmatches'">
+                <p><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/admin/users'">
+                <p><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/admin/teams'">
+                <p><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="bgmainpanel"></div>
+
+    <div class="user">
+        <a class="username" th:text="${name.getName()}"></a>
+
+        <p><i class="fas fa-user-circle" color="white"></i></p>
+    </div>
+
+    <div class="mainpanel">
+
+        <h2>druzyny</h2>
+        <i class="fas fa-times" onClick="window.location.href='/index/home'"></i>
+
+        <div class="tbdiv" sec:authorize="hasRole('USER')">
+            <table class="tablee" >
+                <thead>
+                <tr>
+                    <th class="col fi">drużyna</th>
+                    <th class="col se">adres</th>
+                    <th class="col th">telefon</th>
+                    <th class="col fo">e-mail</th>
+                </tr>
+                </thead>
+            </table>
+
+            <div class="tbbody">
+                <table >
+
+                    <tr class="tr1"  th:each="obj: ${teams}">
+                        <td class="td1" th:text="${obj.teamName}">Karkonosze Jelenia góra</td>
+                        <td class="td2" th:text="${obj.teamAddress}">ul. Piotroswka 29 m, Jelenia góra</td>
+                        <td class="td3" th:text="${obj.tphone}">421222311</td>
+                        <td class="td4" th:text="${obj.temail}">jeleniagora@gmail.comdsadsa</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="tbdivad"  sec:authorize="hasRole('ADMIN')">
+            <table class="tableead">
+                <thead>
+                <tr>
+                    <th class="col adfi">drużyna</th>
+                    <th class="col adse">adres</th>
+                    <th class="col adth">telefon</th>
+                    <th class="col adfo">e-mail</th>
+                </tr>
+                </thead>
+            </table>
+
+            <div class="tbbody">
+                <table >
+
+
+                    <tr class="tr1"  th:each="obj: ${teams}">
+                        <td class="adtd1" th:text="${obj.teamName}">Karkonosze Jelenia góra</td>
+                        <td class="adtd2" th:text="${obj.teamAddress}">ul. Piotroswka 29 m, Jelenia góra</td>
+                        <td class="adtd3" th:text="${obj.tphone}">421222311</td>
+                        <td class="adtd4" th:text="${obj.temail}">jeleniagora@gmail.comdsadsa</td>
+                        <td class="adtd5"  >
+                            <a th:href="@{/admin/team/changeDate(id=${obj.id_team})}" > <i class="fas fa-info-circle"></i> </a>
+                        </td>
+                        <td class="adtd6" >
+                            <a th:href="@{/admin/team/delete(id=${obj.id_team})}"> <i class="fas fa-user-times"></i> </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <form action="http://localhost:8080/index/searchTeam">
+            <div class="search-box">
+
+                <select class="search-sel" name="value">
+                    <option value="Nazwa druzyny">Nazwa Drużyny</option>
+                    <option value="Telefon">Telefon</option>
+                </select>
+                <input class="search-txt" type="text" name="kryterium" placeholder="Type to search">
+                <button class="search-btn" type="submit" ><i class="fas fa-search"></i></button>
+
+
+            </div>
+        </form>
+
+
+
+
+    </div>
+
+</header>
+
+
+
+</body>
+</html>

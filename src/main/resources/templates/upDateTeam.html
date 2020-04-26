@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/updateTeamstyle.css">
+    <script src="https://kit.fontawesome.com/7c7c64a889.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="lfmenu"></div>
+    <div class="lfmenu1">
+
+
+        <h1>asystent sędziego</h1>
+        <input class="line">
+
+        <div sec:authorize="hasRole('USER')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/index/mymatches'">
+                <p ><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/index/referees'">
+                <p ><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/index/teams'">
+                <p ><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d4" onClick="window.location.href='/index/profile'">
+                <p ><i class="fas fa-user-cog"></i>profil</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p ><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+        <div sec:authorize="hasRole('ADMIN')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/admin/allmatches'">
+                <p><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/admin/users'">
+                <p><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/admin/teams'">
+                <p><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="bgmainpanel"></div>
+
+    <div class="user">
+        <a class="username" th:text="${name.getName()}"></a>
+
+        <p><i class="fas fa-user-circle" color="white"></i></p>
+    </div>
+
+    <div class="mainpanel">
+
+        <h2>edytuj drużynę</h2>
+        <i class="fas fa-times" onClick="window.location.href='/admin/home'"></i>
+
+        <form th:action="@{/admin/team/upDateTeam}" th:object="${teams}">
+            <table class="tablee">
+                <tr>
+                    <td class="td">
+                        <a>Nazwa Drużyny</a>
+                    </td >
+                    <td class="td1">
+                        <input type="text" name="imie" th:field="*{teamName}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <a>Adres</a>
+                    </td>
+                    <td class="td1">
+                        <input name="nazwisko" th:field="*{teamAddress}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <a>Telefon</a>
+                    </td>
+                    <td class="td1">
+                        <input name="telefon" th:field="*{tphone}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <a>E-mail</a>
+                    </td>
+                    <td class="td1">
+                        <input name="adres" th:field="*{temail}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="hidden" name="id" th:field="*{id_team}" >
+                    </td>
+                </tr>
+            </table>
+
+
+            <a >
+                <input class="d7" type="submit" value="zatwierdź">
+            </a>
+
+
+        </form>
+
+
+    </div>
+
+</header>
+
+
+
+</body>
+</html>

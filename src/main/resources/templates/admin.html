@@ -1,0 +1,37 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org">
+<html xmlns:sec="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>WebEncyclop</title>
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="8" cellspacing="4" class="tableMenuBg" bgcolor="#e6f2ff">
+    <tr>
+        <td align="left" width="900">
+            <sec:authorize access="hasRole('ROLE_ADMIN')">
+                <a href="/admin">Administracja</a>
+            </sec:authorize>
+            <sec:authorize access="hasRole('ROLE_ADMIN')">
+                <a href="/costam">NIE</a>
+            </sec:authorize>
+        </td>
+        <td align="right">
+            <div sec:authorize="hasRole('ANONYMOUS')">
+                <a href="/login">Zaloguj</a>&nbsp;&nbsp;
+                <a href="/register">Zarejestruj</a>&nbsp;&nbsp;
+            </div>
+            <sec:authorize access="hasRole('ROLE_ADMIN')">
+                <a href="/users">U?ytkownicy</a>
+                <a href="/logout">Wyloguj</a>
+            </sec:authorize>
+
+        </td>
+    </tr>
+
+
+</table>
+</body>
+</html>

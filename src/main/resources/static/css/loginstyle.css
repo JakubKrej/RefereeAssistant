@@ -1,0 +1,211 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+header{
+    
+    position: relative;
+    background-color: #202020;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+
+header div.lfmenu {
+    
+    position: absolute;
+    z-index: 1;
+    width: 20.3%;
+    height: 100vh;
+    background-color: #262626;
+    opacity: 0.7;
+     
+}
+
+header div.lfmenu1 {
+    
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: 100vh;
+    background-color: #171717;
+     
+}
+
+header div.bgmainpanel {
+    
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    right: 0px;
+    z-index: 0;
+    background-color: gray;
+    background-image: url('/img/bgstadion2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    filter: blur(4px);
+    
+}
+
+header h1 {
+    
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    margin-left: 4%;
+    margin-right: 3%;
+    font-size: 33px;
+    color: #ffffff;
+    text-transform: uppercase;
+     
+}
+
+header input.line {
+    
+    position: absolute;
+    top: 13vh;
+    height: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+header div.menubuttons{
+    
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    font-size: 30px;    
+    top: 25vh;
+    height: 80vh;
+    
+    text-transform: uppercase;
+    
+}
+
+header i {
+    
+    margin-right: 30px;
+}
+
+header h2 {
+    
+    position: absolute;
+    font-size: 45px;
+    color: white;
+    width: 16vw;
+    text-align: center;
+    top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-transform: uppercase;
+    
+}
+
+.paneel {
+    
+    position: absolute;
+    width: 20vw;
+    height: 45vh;
+    background-color: black;
+    right: 30%;
+    bottom: 25%;
+    opacity: 0.8;
+    
+}
+
+input.inplog {
+    
+    position: absolute;
+    width: 12vw;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 36%;
+    height: 5vh;
+    padding: 9px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+input.secend {
+    
+    top: 50%;
+    
+}
+
+.butt {
+    
+    position: absolute;
+    width: 8vw;
+    height: 3.5vh;
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    top: 65%;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 45px;
+    border: none;
+    
+}
+
+.butt:hover {
+    
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    
+}
+
+
+.loginbg p {
+    
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    bottom: 20%;
+    margin-left: 34%;
+    margin-right: 34%;
+
+}
+
+.loginbg p:hover {
+
+    cursor: pointer;
+
+}
+
+.loginbg a {
+
+    position: absolute;
+    color: red;
+    font: 16px;
+    bottom: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+
+
+
+
+
