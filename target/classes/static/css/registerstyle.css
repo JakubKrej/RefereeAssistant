@@ -1,0 +1,219 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+header{
+
+    position: relative;
+    background-color: #202020;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+header div.lfmenu {
+
+    position: absolute;
+    z-index: 1;
+    width: 20.3%;
+    height: 100vh;
+    background-color: #262626;
+    opacity: 0.7;
+
+}
+
+header div.lfmenu1 {
+
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: 100vh;
+    background-color: #171717;
+
+}
+
+header div.bgmainpanel {
+
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    right: 0px;
+    z-index: 0;
+    background-color: gray;
+    background-image: url('/img/bgstadion2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    filter: blur(4px);
+
+}
+
+header h1 {
+
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    margin-left: 4%;
+    margin-right: 3%;
+    font-size: 33px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+
+header input.line {
+
+    position: absolute;
+    top: 13vh;
+    height: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.mainpanel {
+
+    position: absolute;
+    width: 30vw;
+    max-width: 75vw;
+    right: 25vw;
+    top: 20vh;
+    bottom: 20vh;
+    background-color: black;
+    opacity: 0.8;
+    display: inline-block;
+
+
+}
+
+.mainpanel i {
+
+
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    font-size: 30px;
+    margin-right: 0px;
+
+}
+
+.mainpanel i:hover {
+
+    cursor: pointer;
+
+}
+
+.mainpanel h2{
+
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.tablee {
+
+    position: absolute;
+    top: 14vh;
+    width: 69%;
+    left: 5vw;
+    right: vw;
+    color:white;
+
+
+}
+
+.td{
+
+    padding: 10px 0px;
+    font-size: 18px;
+    width: 25%;
+    border-right: 2px solid white;
+    text-align: center;
+
+
+}
+
+.td1 {
+
+    width: 80%;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.td1 input {
+
+    background-color: #131314;
+    width: 90%;
+    border: none;
+    height: 35px;
+    opacity: 0.9;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+}
+
+.bttm {
+
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 70%;
+    font-size: 12px;
+    color: red;
+    text-align: center;
+
+}
+
+.err {
+
+    position: relative;
+    width: 100%;
+
+}
+
+.d7  {
+
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    width: 80%;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 30px;
+
+}
+
+.d7:hover {
+
+    background-color: white ;
+    color: black;
+    cursor: pointer;
+
+}
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/matchinfostyle.css">
+    <script src="https://kit.fontawesome.com/7c7c64a889.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="lfmenu"></div>
+    <div class="lfmenu1">
+
+
+        <h1>asystent sędziego</h1>
+        <input class="line">
+
+        <div sec:authorize="hasRole('USER')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/index/mymatches'">
+                <p ><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/index/referees'">
+                <p ><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/index/teams'">
+                <p ><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d4" onClick="window.location.href='/index/profile'">
+                <p ><i class="fas fa-user-cog"></i>profil</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p ><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+        <div sec:authorize="hasRole('ADMIN')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/admin/allmatches'">
+                <p><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/admin/users'">
+                <p><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/admin/teams'">
+                <p><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="bgmainpanel"></div>
+
+    <div class="user">
+        <a class="username" th:text="${name.getName()}"></a>
+
+        <p><i class="fas fa-user-circle" color="white"></i></p>
+    </div>
+
+    <div class="mainpanel">
+
+        <h2>informacje o meczu</h2>
+        <i class="fas fa-times" onClick="window.location.href='/index/showMatches'"></i>
+
+        <div>
+            <div class="addinp">
+                <input class="gos p" th:value="*{fbm.getTeamA()}"  disabled>
+                <input class="scr gospscr" type="text" th:value="*{fbm.getScrA()}" disabled>
+                <input class="scr goscscr" type="text" th:value="*{fbm.getScrB()}" disabled>
+                <input class="gos c" type="text" th:value="*{fbm.getTeamB()}" disabled>
+
+                <p class="gosp">gospodarze</p>
+                <p class="gosc">goscie</p>
+
+
+                <div class="dot">
+                    <i class="fas fa-circle dofir"></i>
+                    <i class="fas fa-circle dosec"></i>
+                </div>
+            </div>
+
+            <div class="dodinp">
+                <input class="datam" type="text" name="" id="" th:value="*{fbm.getDate()}" disabled>
+                <input class="gos e" type="text" th:value="*{fbm.getInfo()}" disabled>
+
+                <p class="datan">data</p>
+                <p class="mjsc">miejsce</p>
+                <p class="doinf">informacje dodatkowe</p>
+                <input class="gos d" cols="173" rows="7" th:value="*{fbm.getMatchAddress()}" disabled>
+            </div>
+
+
+            <a th:href="@{/index/match/changeDate(id=${fbm.id_match})}" ><p type="submit" class="d7">aktualizuj</p></a>
+
+        </div>
+    </div>
+
+</header>
+
+
+
+</body>
+</html>

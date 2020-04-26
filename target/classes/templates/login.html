@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <script src="https://kit.fontawesome.com/7c7c64a889.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="lfmenu"></div>
+    <div class="lfmenu1">
+
+
+        <h1>asystent sędziego</h1>
+        <input class="line">
+
+    </div>
+
+
+    <div class="bgmainpanel"></div>
+
+
+    <div class="paneel">
+
+        <h2>logowanie</h2>
+        <form th:action="@{/login}" method="POST">
+            <div class="loginbg">
+
+                <input class="inplog" type="text" th:placeholder="Email" id="email" name="email">
+
+                <input class="inplog secend" type="password" th:placeholder="Password" id="password" name="password" >
+                <input class="butt" type="Submit" value="Zaloguj">
+
+                <p onclick="window.location.href='/register'">Zarejestruj się!</p>
+
+                <a th:if="${param.error}">Email or Password is invalid.</a>
+            </div>
+        </form>
+    </div>
+
+</header>
+
+
+
+</body>
+</html>

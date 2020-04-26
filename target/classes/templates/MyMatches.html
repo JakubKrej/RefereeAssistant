@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/matchesstyle.css">
+    <script src="https://kit.fontawesome.com/7c7c64a889.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="lfmenu"></div>
+    <div class="lfmenu1">
+
+
+        <h1>asystent sędziego</h1>
+        <input class="line">
+
+        <div sec:authorize="hasRole('USER')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/index/mymatches'">
+                <p ><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/index/referees'">
+                <p ><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/index/teams'">
+                <p ><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d4" onClick="window.location.href='/index/profile'">
+                <p ><i class="fas fa-user-cog"></i>profil</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p ><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+        <div sec:authorize="hasRole('ADMIN')" class="menubuttons">
+            <div class="d1" onClick="window.location.href='/admin/allmatches'">
+                <p><i class="fas fa-futbol"></i>mecze</p>
+            </div>
+            <div class="d2" onClick="window.location.href='/admin/users'">
+                <p><i class="far fa-address-book"></i>sędziowie</p>
+            </div>
+            <div class="d3" onClick="window.location.href='/admin/teams'">
+                <p><i class="fas fa-users"></i>drużyny</p>
+            </div>
+            <div class="d5" onClick="window.location.href='/logout'">
+                <p><i class="fas fa-sign-out-alt"></i>wyloguj</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="bgmainpanel"></div>
+
+    <div class="user">
+        <a class="username" th:text="${name.getName()}"></a>
+
+        <p><i class="fas fa-user-circle" color="white"></i></p>
+    </div>
+
+    <div class="mainpanel">
+        <div class="inp" onClick="window.location.href='/index/addMatch'">
+            <p><i class="fas fa-plus"></i>dodaj mecz</p>
+        </div>
+        <div class="inp sec" onClick="window.location.href='/index/showMatches'">
+            <p><i class="fas fa-list"></i>moje mecze</p>
+        </div>
+        <div class="inp thr" onClick="window.location.href='/index/home'" type="button">
+            <p><i class="fas fa-chevron-left"></i>powrót</p>
+        </div>
+    </div>
+
+</header>
+
+
+
+</body>
+</html>

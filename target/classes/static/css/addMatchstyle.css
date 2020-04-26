@@ -1,0 +1,454 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+
+    position: relative;
+    background-color: #202020;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+header div.lfmenu {
+
+    position: absolute;
+    z-index: 1;
+    width: 20.3%;
+    height: 100vh;
+    background-color: #262626;
+    opacity: 0.7;
+
+}
+
+header div.lfmenu1 {
+
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: 100vh;
+    background-color: #171717;
+
+}
+
+header div.bgmainpanel {
+
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    right: 0px;
+    z-index: 0;
+    background-color: gray;
+    background-image: url('/img/bgstadion2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    filter: blur(4px);
+
+}
+
+header h1 {
+
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    margin-left: 4%;
+    margin-right: 3%;
+    font-size: 33px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+
+header input.line {
+
+    position: absolute;
+    top: 13vh;
+    height: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+header div.menubuttons{
+
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    font-size: 30px;
+    top: 25vh;
+    height: 80vh;
+    text-transform: uppercase;
+
+}
+
+header i {
+
+    margin-right: 30px;
+}
+
+
+
+.d1 {
+
+    position: absolute;
+    margin-left: 7px;
+    padding: 20px 133px 20px 75px;
+    background-color: transparent;
+
+}
+
+.d1:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d2  {
+
+    position: absolute;
+    margin-left: 7px;
+    top: 80px;
+    padding: 20px 75px 20px 75px;
+    background-color: transparent;
+}
+
+.d2:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d3  {
+
+    position: absolute;
+    margin-left: 7px;
+    top: 160px;
+    padding: 20px 81px 20px 75px;
+    background-color: transparent;
+}
+
+.d3:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d4 {
+
+    position: absolute;
+    margin-left: 7px;
+    bottom: 160px;
+    padding: 20px 124px 20px 75px;
+    background-color: transparent;
+}
+
+.d4:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d5  {
+
+    position: absolute;
+    margin-left: 7px;
+    bottom: 80px;
+    padding: 20px 90px 20px 75px;
+    background-color: transparent;
+}
+
+.d5:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.user{
+
+    position: absolute;
+    width: 20%;
+    height: 50px;
+    right: 50px;
+    top: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 45px;
+    opacity: 0.8;
+
+}
+
+
+.user p{
+
+    position: absolute;
+    color: #ffffff;
+    width: 47px;
+    height: 47px;
+    right: 0px;
+    margin-top: 0px;
+    font-size: 48px;
+    vertical-align: text-top;
+
+}
+
+.username {
+
+    position: absolute;
+    height: 40px;
+    top: 5px;
+    border: none;
+    width: 80%;
+    left: 10px;
+    text-align: center;
+    border-radius: 45px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 9px;
+    padding-bottom: 12px;
+
+}
+
+.mainpanel {
+
+    position: absolute;
+    width: 75vw;
+    max-width: 75vw;
+    right: 50px;
+    top: 150px;
+    bottom: 50px;
+    background-color: black;
+    opacity: 0.8;
+    display: inline-block;
+
+
+}
+
+.mainpanel h2{
+
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.addinp {
+
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    width: 80%;
+
+}
+
+.gos {
+
+    background-color: #131314;
+    top: 20%;
+    border: none;
+    border-bottom: 3px solid white;
+    width: 18vw;
+    height: 5vh;
+    padding: 0px 5px 0px 5px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+
+
+}
+
+.scr{
+
+
+   text-align: center;
+   font-size: 60px;
+    border: none;
+
+
+
+}
+
+.gospscr{
+
+    height: 180px;
+    width: 140px;
+    border-radius: 20px;
+    margin-left: 30px;
+
+
+}
+
+.goscscr{
+
+    height: 180px;
+    width: 140px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 30px;
+
+}
+
+.addinp p{
+
+    position: absolute;
+    color: gray;
+    top:135px;
+    top: 14vh;
+    text-transform: uppercase;
+
+
+}
+
+.gosp {
+
+    left: 12vh;
+
+}
+
+.gosc {
+
+    left: 49vw;
+
+}
+
+.dot {
+
+    position: absolute;
+    color: white;
+    display: grid;
+    left: 29.5vw;
+    top: 35%;
+
+}
+
+.dosec {
+
+    margin-top: 60%;
+
+}
+
+.dodinp {
+
+    position: absolute;
+    top: 40vh;
+    left: 7vw;
+    width: 80%;
+
+}
+
+.datam {
+
+    background-color: #131314;
+    color: white;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px 20px 8px 20px;
+    border: none;
+    border-bottom: 3px solid white;
+    margin-left: 6%;
+
+}
+
+.dodinp {
+
+    color: gray;
+    text-transform: uppercase;
+
+}
+
+.datan {
+
+    position: absolute;
+    top: 5.5vh;
+    left: 9vw;
+
+}
+
+.mjsc {
+
+    position: absolute;
+    top: 5.5vh;;
+    left: 39vw;
+
+}
+
+.doinf {
+
+    position: absolute;
+    top: 23vh;
+    left: 25vw;
+
+}
+
+
+.e {
+
+    margin-left: 180px;
+    margin-left: 10vw;
+    width: 30vw;
+
+}
+
+.d {
+
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 11vh;
+    padding: 30px;
+
+}
+
+.d7  {
+
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    right: 3vw;
+    bottom: 5vh;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 30px;
+    border: 1px solid white
+
+}
+
+.d7:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+
+
+
+

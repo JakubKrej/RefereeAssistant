@@ -1,0 +1,330 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+header{
+
+    position: relative;
+    background-color: #202020;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+header div.lfmenu {
+
+    position: absolute;
+    z-index: 1;
+    width: 20.3%;
+    height: 100vh;
+    background-color: #262626;
+    opacity: 0.7;
+
+}
+
+header div.lfmenu1 {
+
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: 100vh;
+    background-color: #171717;
+
+}
+
+header div.bgmainpanel {
+
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    right: 0px;
+    z-index: 0;
+    background-color: gray;
+    background-image: url('/img/bgstadion2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    filter: blur(4px);
+
+}
+
+header h1 {
+
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    margin-left: 4%;
+    margin-right: 3%;
+    font-size: 33px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+
+header input.line {
+
+    position: absolute;
+    top: 13vh;
+    height: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+header div.menubuttons{
+
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    font-size: 30px;
+    top: 25vh;
+    height: 80vh;
+    text-transform: uppercase;
+
+}
+
+header i {
+
+    margin-right: 30px;
+}
+
+
+
+.d1 {
+
+    position: absolute;
+    margin-left: 7px;
+    padding: 20px 133px 20px 75px;
+    background-color: transparent;
+
+}
+
+.d1:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d2  {
+
+    position: absolute;
+    margin-left: 7px;
+    top: 80px;
+    padding: 20px 75px 20px 75px;
+    background-color: transparent;
+}
+
+.d2:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d3  {
+
+    position: absolute;
+    margin-left: 7px;
+    top: 160px;
+    padding: 20px 81px 20px 75px;
+    background-color: transparent;
+}
+
+.d3:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d4 {
+
+    position: absolute;
+    margin-left: 7px;
+    bottom: 160px;
+    padding: 20px 124px 20px 75px;
+    background-color: transparent;
+}
+
+.d4:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.d5  {
+
+    position: absolute;
+    margin-left: 7px;
+    bottom: 80px;
+    padding: 20px 90px 20px 75px;
+    background-color: transparent;
+}
+
+.d5:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.user{
+
+    position: absolute;
+    width: 20%;
+    height: 50px;
+    right: 50px;
+    top: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 45px;
+    opacity: 0.8;
+
+}
+
+
+.user p{
+
+    position: absolute;
+    color: #ffffff;
+    width: 47px;
+    height: 47px;
+    right: 0px;
+    margin-top: 0px;
+    font-size: 48px;
+    vertical-align: text-top;
+
+}
+
+.username {
+
+    position: absolute;
+    height: 40px;
+    top: 5px;
+    border: none;
+    width: 80%;
+    left: 10px;
+    text-align: center;
+    border-radius: 45px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 9px;
+    padding-bottom: 12px;
+
+}
+
+.mainpanel {
+
+    position: absolute;
+    width: 30vw;
+    max-width: 75vw;
+    right: 25vw;
+    top: 22vh;
+    bottom: 20vh;
+    background-color: black;
+    opacity: 0.8;
+    display: inline-block;
+
+
+}
+
+.mainpanel i {
+
+
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    color: white;
+    font-size: 30px;
+    margin-right: 0px;
+
+}
+
+.mainpanel i:hover {
+
+    cursor: pointer;
+
+}
+
+.mainpanel h2{
+
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.tablee {
+
+    position: absolute;
+    top: 15vh;
+    width: 69%;
+    left: 5vw;
+    right: vw;
+    color:white;
+
+
+}
+
+.td{
+
+    padding: 10px 0px;
+    font-size: 18px;
+    width: 25%;
+    border-right: 2px solid white;
+    text-align: center;
+
+
+}
+
+.td1 {
+
+    width: 80%;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.d7  {
+
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    bottom: 50px;
+    width: 50%;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 30px;
+
+}
+
+.d7:hover {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
