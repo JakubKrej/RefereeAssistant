@@ -5,7 +5,7 @@
 * [Technologie](#technologie)
 * [Funkcje](#funkcje)
 * [Zrzuty ekranów](#zrzuty-ekranów)
-* [Status](#status)
+
 
 ## Informacje
 Projekt Asystent Sędziego jest aplikacja webową. Projekt ma na celu rozwinięcie moich umiejętności w pracy z java, 
@@ -123,8 +123,6 @@ Ekran, na którym admin może edytować dane drużyn będących w bazie.
 
 ![Example screenshot](./img/adedytujdruzyne.jpg)
 
-## Status
-Projekt jest: _cały czas rozwijany_. Na bieżąco dodaje kolejne funkcje i widoki oraz uaktualniam dotychczas napisany kod.
 
 
 
